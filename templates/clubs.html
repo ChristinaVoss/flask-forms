@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>List clubs</h1><br>
+
+    {% for club in clubs_list %}
+        <h2> {{ club['name'] }} </h2>
+        <p> {{ club['description'] }} </p>
+        <p> {{ club['spaces_available'] }} </p>
+        <p>{{ club['time_of_day'] }}</p>
+        <p>Club is free to join:
+            {% if club['is_free'] %}
+                Yep.
+            {% else %}
+                Nope.
+            {% endif %}</p>
+        <hr>
+    {% endfor %}
+
+{% endblock %}

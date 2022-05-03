@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% macro validate_field(field) %}
+    {% if field.errors %}
+      <div class=errors>
+      {% for error in field.errors %}
+        <p>{{ error }}</p>
+      {% endfor %}
+    </div>
+    {% endif %}
+  {% endmacro %}
+
+  <h1> Create a new club</h1>
+
+  <form method="POST" action="/">
+      {{ form.csrf_token }}
+          {{ form.name.label }}
+          {{ form.name }}
+          {{ validate_field(form.name) }}<br><br>
+
+          {{ form.description.label }} <br>
+          {{ form.description(rows=10, cols=50) }}
+          {{ validate_field(form.description) }}<br><br>
+
+          {{ form.spaces_available.label }}
+          {{ form.spaces_available() }}
+          {{ validate_field(form.spaces_available) }}<br><br>
+
+          {{ form.time_of_day.label }}
+          {{ form.time_of_day() }}
+          {{ validate_field(form.time_of_day) }}<br>
+
+          {{ form.is_free.label }}
+          {{ form.is_free() }}
+          {{ validate_field(form.is_free) }}<br><br>
+
+          {{ form.submit() }}
+
+  </form>
+{% endblock %}
