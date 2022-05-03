@@ -1,5 +1,7 @@
 # Flask forms
 
+In this we start adding a tiny bit more complexity and organisation. The form is placed into its own forms.py file, and we have three templates: One to render the base html that all pages include (head with meta info, body etc); One index template for the "home" page - this is where we render the clubs form we defined in forms.py; and one template for displaying the clubs we created with the form (no database yet, so they are only stored while you are running the app).
+
 **Setup**
 
 First create and activate some form of environment to store your dependencies. I like Anaconda:
