@@ -42,15 +42,11 @@ You should now be able to see the output in your browser window (at http://127.0
 
 ### Resulting pages
 
+**index.html**
 
-<img width="467" alt="Screenshot 2022-05-11 at 14 45 11" src="https://user-images.githubusercontent.com/20923607/167864797-5504870c-49c9-4211-ba27-ca511b191db1.png">
+<img width="520" alt="Screenshot 2022-05-12 at 18 07 55" src="https://user-images.githubusercontent.com/20923607/168130750-94775158-6d2b-4515-9fa2-d68be751bbe1.png">
 
+**clubs.html (after adding a club in the form above - data does not persist in this app!)**
 
-======================================================
-
-<img width="399" alt="Screenshot 2022-05-11 at 14 44 58" src="https://user-images.githubusercontent.com/20923607/167864832-6da6f2a1-bdec-4195-8a46-c44fb1b7061e.png">
-
-
-
-
+<img width="517" alt="Screenshot 2022-05-12 at 18 08 59" src="https://user-images.githubusercontent.com/20923607/168130767-c0f760ff-7f27-4a18-b6e4-663b355199f9.png">
 
