@@ -1,9 +1,14 @@
 # Flask forms
 
+### App structure
+
 This project adds a tiny bit more complexity and organisation. The form is placed into its own forms.py file, and we have three templates: 
 - One to render the base html that all pages include (head with meta info, body etc).
 - One index template for the "home" page - this is where we render the clubs form we defined in forms.py.
 - One template for displaying the clubs we created with the form (no database yet, so they are only stored while you are running the app).
+
+<img width="611" alt="Screenshot 2022-05-12 at 09 40 54" src="https://user-images.githubusercontent.com/20923607/168029589-e89fede6-c9d4-40b8-85ba-582093f0820f.png">
+
 
 ### Setup
 
